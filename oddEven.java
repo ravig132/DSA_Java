@@ -6,10 +6,11 @@ public class oddEven {
         System.out.print("Enter the Number : ");
         int num =  input.nextInt() ;
 
-        if (num%2 == 0){
-            System.out.println("Number is even ");
-        }else {
-            System.out.println("Number is odd ");
+        for (int i = 0 ; i<=num ;i++){
+            if(i%2!=0){
+                continue;
+            }
+            System.out.print(i+" ");
         }
     }
 }
