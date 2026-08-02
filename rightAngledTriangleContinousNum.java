@@ -1,0 +1,15 @@
+public class rightAngledTriangleContinousNum {
+    public static void main(String[] args) {
+        int n = 5 ;
+        // number which are going to print
+        int num = 1 ;
+
+        for (int row = 1 ; row<=n; row++){
+            for (int col = 1 ; col<=row; col++){
+                System.out.print(num+" ");
+                num++;
+            }
+            System.out.println();
+        }
+    }
+}
