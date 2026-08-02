@@ -10,5 +10,15 @@ public class rightAngleTriangleAsciiValue {
             System.out.println();
         }
 
+        int n = 5 ;
+
+        for (int row = 1; row<=n; row++){
+            for (int col = 1; col<=row ; col++){
+                char val = (char) ('F' - col);
+                System.out.print(val+" ");
+            }
+            System.out.println();
+        }
+
     }
 }
