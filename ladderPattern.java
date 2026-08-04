@@ -3,20 +3,30 @@ import java.util.Scanner;
 public class ladderPattern {
     public static void main (String [] args ){
         Scanner input = new Scanner(System.in);
+        System.out.print("Enter the ladder steps : ");
+        int n = input.nextInt();
 
-        System.out.print("Enter the Number : ");
-        int num = input.nextInt();
-        for (int i = 0; i < num ; i++) {
-            for (int j = 1; j <=num ; j++){
-                for (int l = 0; l < (num-1)*i ; l++) {
+
+
+        //outer loop that how many steps a ladder will have
+        for (int outerLoop = 1 ; outerLoop<=n; outerLoop++  ){
+            //for rows of pattern
+            for (int row = 1; row<=n; row++){
+                //for spaces
+                for (int spaces = 1 ; spaces<= 2*outerLoop-2; spaces++){
                     System.out.print("  ");
+
                 }
-                for (int k = 1 ; k<= num; k++){
+                //for pattern columns
+                for (int col = 1; col<=n; col++){
                     System.out.print("* ");
                 }
                 System.out.println();
-
             }
+
+
         }
+
+
     }
 }
