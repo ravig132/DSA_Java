@@ -13,7 +13,7 @@ public class ladderPattern {
             //for rows of pattern
             for (int row = 1; row<=n; row++){
                 //for spaces
-                for (int spaces = 1 ; spaces<= 2*outerLoop-2; spaces++){
+                for (int spaces = 1 ; spaces<=(n-1)*outerLoop+1-n; spaces++){
                     System.out.print("  ");
 
                 }
