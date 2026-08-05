@@ -3,22 +3,20 @@ import java.util.Scanner;
 public class LCM {
     public static void main (String [] args ){
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter the small number : ");
-        int small = input.nextInt();
-        System.out.print("Enter the big number : ");
-        int big = input.nextInt();
-        int LCM = lcm(small,big);
-    }
-    public static int lcm (int small, int big ){
-        int i = 1 ;
-        int lcmFound = 1 ;
-        while (big==1){
-            if (small%i==0 || big%i==0){
-                lcmFound *=i ;
+        System.out.print("Enter the number : ");
+        int num1 = input.nextInt();
+        System.out.print("Enter the number : ");
+        int num2 = input.nextInt();
 
-            }
-            i++;
-        }
-        return 0 ;
+        System.out.println(lcm(num1,num2));
+
     }
+
+    //using formula lcm = num1*num2/hcf
+
+    static int lcm(int num1 ,int num2){
+        int hcf = hcfOptimized.hcf(num1,num2);
+        return num1*num2/hcf;
+    }
+
 }
