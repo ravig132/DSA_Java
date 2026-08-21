@@ -9,7 +9,6 @@ public class hcfOptimized {
         int num2 = input.nextInt();
 
         System.out.print(hcf(num1,num2));
-
     }
 
     static int hcf(int num1, int num2){
